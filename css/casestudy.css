@@ -224,6 +224,32 @@ a:focus {
     background-color: var(--gen2);
 }
 
+.content__link--private {
+	font-family: 'gotham', sans-serif;
+	font-weight: 400;
+	pointer-events: auto;
+	grid-area: link;
+	align-self: end;
+	justify-self: start;
+	z-index: 10;
+    /* background-color: transparent;
+    color: var(--gen2);
+	border: 2px solid var(--gen2); */
+	background: #DCE4ED;
+	color: #686E75;
+    text-decoration: none;
+    width: 160px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+	border-radius: 100px;
+	pointer-events: none;
+    color: gray; /* Change la couleur pour indiquer qu'il est désactivé */
+    text-decoration: none;
+}
+
 @media screen and (min-width: 750px) {
 
 }
@@ -334,6 +360,12 @@ a:focus {
 		height: 64px;
 		font-size: 20px;
 	}
+
+	.content__link--private {
+		width: 180px;
+		height: 64px;
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width: 36em) {
@@ -342,11 +374,13 @@ a:focus {
 	}
 	.content__author,
 	.content__desc,
-	.content__link {
+	.content__link,
+	.content__link--private {
 		font-size: 1.35em;
 	}
 
-	.content__link {
+	.content__link,
+	.content__link--private {
 		width: 180px;
 		height: 64px;
 		font-size: 20px;
@@ -359,11 +393,13 @@ a:focus {
 	}
 	.content__author,
 	.content__desc,
-	.content__link {
+	.content__link,
+	.content__link--private {
 		font-size: 1.35em;
 	}
 
-	.content__link {
+	.content__link,
+	.content__link--private {
 		width: 180px;
 		height: 64px;
 		font-size: 20px;
@@ -375,7 +411,8 @@ a:focus {
 		/* transform: scale3d(0.5,0.5,1); */
 	}
 
-	.content__link {
+	.content__link,
+	.content__link--private {
 		width: 180px;
 		height: 64px;
 	}
