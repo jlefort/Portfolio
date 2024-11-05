@@ -246,8 +246,6 @@ a:focus {
     text-transform: uppercase;
 	border-radius: 100px;
 	pointer-events: none;
-    color: gray; /* Change la couleur pour indiquer qu'il est désactivé */
-    text-decoration: none;
 }
 
 @media screen and (min-width: 750px) {
